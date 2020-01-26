@@ -7,7 +7,7 @@ const Routes = () => {
   return (
     <Router>
       <Scene key="root">
-        <Scene key="login" component={Login} title="Login" initial={true} />
+        <Scene key="login" component={Login} initial={true} hideNavBar />
         <Scene key="signup" component={Signup} title="About" />
       </Scene>
     </Router>

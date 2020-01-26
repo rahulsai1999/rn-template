@@ -11,7 +11,7 @@ class LView extends Component {
         source={require("./loaderCat.json")}
         autoPlay
         loop
-        style={{ marginTop: 20, height: 270 }}
+        style={{ height: 270 }}
       />
     );
   }

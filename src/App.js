@@ -1,12 +1,16 @@
 import React from "react";
-import { StyleSheet, View, Button } from "react-native";
 import Routes from "./router";
-import Login from "./pages/login";
+import { ApplicationProvider, IconRegistry } from "@ui-kitten/components";
+import { EvaIconsPack } from "@ui-kitten/eva-icons";
+import { mapping, light as lightTheme } from "@eva-design/eva";
 
 const App = () => {
   return (
     <>
-      <Routes />
+      <IconRegistry icons={EvaIconsPack} />
+      <ApplicationProvider mapping={mapping} theme={lightTheme}>
+        <Routes />
+      </ApplicationProvider>
     </>
   );
 };

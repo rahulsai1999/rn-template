@@ -1,16 +1,12 @@
 import React from "react";
 import { StyleSheet, View, Button } from "react-native";
-
-import { PurpButton } from "./components/button";
-import { LView } from "./components/lottieView";
+import Routes from "./router";
+import Login from "./pages/login";
 
 const App = () => {
   return (
     <>
-      <View>
-        <LView />
-        <Button title="Hello">Hello</Button>
-      </View>
+      <Routes />
     </>
   );
 };

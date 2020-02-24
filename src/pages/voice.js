@@ -145,6 +145,7 @@ class VoiceTest extends Component {
   render() {
     return (
       <View style={styles.container}>
+
         <Text style={styles.stat}>{`Status: ${
           this.state.started == "yes" ? "Listening" : "Stopped"
         }`}</Text>

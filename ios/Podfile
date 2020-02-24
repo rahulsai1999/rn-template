@@ -36,6 +36,8 @@ target 'loginui' do
 
   pod 'react-native-voice', :path => '../node_modules/@react-native-community/voice'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'loginuiTests' do
     inherit! :search_paths
     # Pods for testing

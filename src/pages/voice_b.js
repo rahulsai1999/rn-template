@@ -54,13 +54,40 @@ class voice_b extends Component {
           value={this.state.medstring}
           onChangeText={this.changeText}
         />
-        <Text>{this.state.medname}</Text>
-        <Icon name="sunrise" size={35} color="#FF7F4F"></Icon>
-        <Text>{this.state.morning}</Text>
-        <Icon name="sun" size={35} color="#FF7F4F"></Icon>
-        <Text>{this.state.afternoon}</Text>
-        <Icon name="moon" size={35} color="#FF7F4F"></Icon>
-        <Text>{this.state.night}</Text>
+        <View style={styles.wrapperIcon}>
+          <Text style={styles.textSty}>{this.state.medname}</Text>
+        </View>
+
+        <View style={styles.wrapperIcon}>
+          <Icon
+            style={styles.IconSty}
+            name="sunrise"
+            size={35}
+            color="#FF7F4F"
+          ></Icon>
+          <Text style={styles.textSty}>{this.state.morning}</Text>
+        </View>
+
+        <View style={styles.wrapperIcon}>
+          <Icon
+            style={styles.IconSty}
+            name="sun"
+            size={35}
+            color="#FF7F4F"
+          ></Icon>
+          <Text style={styles.textSty}>{this.state.afternoon}</Text>
+        </View>
+
+        <View style={styles.wrapperIcon}>
+          <Icon
+            style={styles.IconSty}
+            name="moon"
+            size={35}
+            color="#FF7F4F"
+          ></Icon>
+          <Text style={styles.textSty}>{this.state.night}</Text>
+        </View>
+
         <Button style={styles.button}>Next Page</Button>
       </View>
     );
@@ -81,7 +108,10 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   container: { justifyContent: "center", alignItems: "center" },
-  headerText: { marginTop: 80 }
+  headerText: { marginTop: 80, marginLeft: 20 },
+  wrapperIcon: { marginLeft: 20, marginBottom: 20, flexDirection: "row" },
+  IconSty: { marginRight: 20 },
+  textSty: { justifyContent: "center" }
 });
 
 export default voice_b;

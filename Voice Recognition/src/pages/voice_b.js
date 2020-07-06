@@ -55,7 +55,9 @@ class voice_b extends Component {
           onChangeText={this.changeText}
         />
         <View style={styles.wrapperIcon}>
-          <Text style={styles.textSty}>{this.state.medname}</Text>
+          <Text category="h5" style={styles.textSty}>
+            {this.state.medname}
+          </Text>
         </View>
 
         <View style={styles.wrapperIcon}>
@@ -88,7 +90,7 @@ class voice_b extends Component {
           <Text style={styles.textSty}>{this.state.night}</Text>
         </View>
 
-        <Button style={styles.button}>Next Page</Button>
+        <Button style={styles.button}>Next</Button>
       </View>
     );
   }
@@ -105,7 +107,8 @@ const styles = StyleSheet.create({
     width: 250,
     height: 50,
     marginTop: 40,
-    borderRadius: 10
+    borderRadius: 10,
+    marginLeft: 20
   },
   container: { justifyContent: "center", alignItems: "center" },
   headerText: { marginTop: 80, marginLeft: 20 },

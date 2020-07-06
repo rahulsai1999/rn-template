@@ -9,10 +9,10 @@ const Routes = () => {
   return (
     <Router>
       <Scene key="root">
-        <Scene key="voice" component={Voice} initial={true} hideNavBar />
-        <Scene key="voice_b" component={Voice_b} hideNavBar />
-        {/* <Scene key="login" component={Login} initial={true} hideNavBar /> */}
-        {/* <Scene key="signup" component={Signup} title="About" /> */}
+        {/* <Scene key="voice" component={Voice} initial={true} hideNavBar />
+        <Scene key="voice_b" component={Voice_b} hideNavBar /> */}
+        <Scene key="login" component={Login} initial={true} hideNavBar />
+        <Scene key="signup" component={Signup} title="About" />
       </Scene>
     </Router>
   );
